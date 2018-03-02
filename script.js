@@ -202,13 +202,13 @@ var endGame = document.getElementById("game-end");
 
 //Game End
 function gameEnd(){
-  if(playerScore === 1){
+  if(playerScore === 11){
     canvas.style.display = "none";
     playerScoreboard.style.display = "none";
     compScoreboard.style.display = "none";
     endGame.parentNode.style.display = "block";
     endGame.innerHTML = "YASSS QUEEN YOU WIN!"
-  } else if(compScore === 1){
+  } else if(compScore === 11){
     canvas.style.display = "none";
     playerScoreboard.style.display = "none";
     compScoreboard.style.display = "none";
