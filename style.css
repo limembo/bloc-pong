@@ -1,6 +1,41 @@
+.title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+}
+
+.scoreboard {
+  text-align: center;
+}
+
+#player-score {
+  position: relative;
+  display: inline-block;
+  margin-right: 9rem;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#comp-score {
+  position: relative;
+  display: inline-block;
+  margin-left: 9rem;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.canvas {
+  position: relative;
+}
+
 #canv {
+  position: relative;
   padding: 0;
   margin: auto;
   display: block;
   width: 800px;
+  background: #dee4df;
 }

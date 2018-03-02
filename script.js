@@ -105,12 +105,12 @@ function Ball(){
     };
     //CPU score
     if(this.x < 0){
-      console.log('CPU Scores');
+      compScore += 1;
       resetTable();
     };
     //Scores for our players
     if(this.x > 500){
-      console.log('Player Scores');
+      playerScore += 1;
       resetTable();
     };
   };
@@ -179,10 +179,17 @@ function addKeyEvents(){
 var player = new Paddle(10, 130, 10, 50);
 var computer = new Paddle(480, 130, 10, 50);
 var ball = new Ball();
+var playerScore = 0;
+var compScore = 0;
+
+var playerScoreboard = document.getElementById("player-score");
+var compScoreboard = document.getElementById("comp-score");
 
 var update = function(){
   ball.move(player, computer);
   computer.computerUpdate(ball);
+  playerScoreboard.innerHTML = "Score: " + playerScore;
+  compScoreboard.innerHTML = "Score: " + compScore;
 };
 
 function render(){
