@@ -16,6 +16,7 @@
   font-family: arial;
   text-transform: uppercase;
   font-size: 14px;
+  visibility: hidden;
 }
 
 #comp-score {
@@ -25,10 +26,12 @@
   font-family: arial;
   text-transform: uppercase;
   font-size: 14px;
+  visibility: hidden;
 }
 
 .canvas {
   position: relative;
+  visibility: hidden;
 }
 
 #canv {
@@ -38,4 +41,35 @@
   display: block;
   width: 800px;
   background: #dee4df;
+}
+
+#intro {
+  text-align: center;
+  border: 2px solid black;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  font-family: arial;
+}
+
+#start {
+  margin-top: 13rem;
+  padding: 0 3rem 0 3rem;
+}
+
+.end {
+  display: none;
+  text-align: center;
+  border: 2px solid black;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  visibility: visible;
+}
+
+#game-end {
+  color: #8b0000;
+  margin-top: 11rem;
+  font-family: arial;
+  visibility: visible;
 }
